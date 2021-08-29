@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Rock|Paper|Scissor-Game</title>
+        <meta name="description" content="game of rock, paper, scissor">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <h1>ROCK PAPER SCISSORS</h1>
+        </header>
+        
+        <section id="scoreboard-section">
+            <div class="scoreboard-bucket">
+                <div class="scoreboard-item" id="board-item1">
+                    0
+                </div>
+                <p>You</p>
+            </div>
+            <div class="scoreboard-bucket">
+                <div class="scoreboard-item" id="board-item2">
+                    0
+                </div>
+                <p>Computer</p>
+            </div>
+        </section>
+        <section id="user-move-selection">
+            <div class="choice-bucket">
+                <div class="choice-selection-region">
+                    <img src="images/rock.png" class="user-choice">
+                </div>
+                <div>
+                    <p>ROCK</p>
+                </div>
+            </div>
+            <div class="choice-bucket">
+                <div class="choice-selection-region">
+                    <img src="images/paper.png" class="user-choice">
+                </div>
+                <div>
+                    <p>PAPER</p>
+                </div>
+            </div>
+            <div class="choice-bucket">
+                <div class="choice-selection-region">
+                    <img src="images/scissor.png" class="user-choice">
+                </div>
+                <div>
+                    <p>SCISSOR</p>
+                </div>
+            </div>
+        </section>
+        <section id="user-prompt-action">
+            <p>Make your move !</p>
+        </section>
+        <section id="user-result-action">
+            <p id="user-result-action-text"></p>
+        </section>
+        <section id="display-winner-section">
+            <img src="images/winner.gif" id="winner-lottie">
+        </section>
+        <section id="display-loser-section">
+            <img src="images/loser.gif" id="loser-lottie">
+        </section>
+        <script src="js/main.js" defer></script>
+    </body>
+</html>

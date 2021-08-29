@@ -1,0 +1,130 @@
+h1 {
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 0.5rem;
+    text-shadow: 2px 2px 8px #ff0000;
+}
+
+p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.3rem;
+}
+
+.choice-bucket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#scoreboard-section {
+    display: flex;
+    place-content: space-evenly;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+
+.scoreboard-item {
+    width: 50px;
+    height: 50px;   
+    display: flex;
+    place-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.show-win-animation {
+    border: 1px solid greenyellow;
+}
+
+#board-item1{
+    background-color: red;
+}
+
+#board-item2{
+    background-color: yellow;
+}
+
+#user-move-selection {
+    display: flex;
+    place-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.choice-selection-region {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    border: 2px solid red;
+    border-radius: 50%;
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+    background-color: #172c5b;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.choice-selection-region:active {
+    box-shadow: rgba(100, 100, 111, 1.0) 0px 7px 29px 0px;
+    transform: translateY(5px);
+}
+
+.user-choice {
+    width: 80px;
+    height: 80px;
+}
+
+#user-prompt-action p {
+    text-align: center;
+    font-size: 30px;
+}
+
+#user-result-action p {
+    text-align: center;
+    font-size: 30px;
+}
+
+#user-result-section {
+    display: none;
+}
+
+#display-winner-section, #display-loser-section {
+    display: none;
+    place-content: center;
+}
+
+#winner-lottie {
+    width: 80%;
+}
+
+.scoreboard-bucket {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+
+    .choice-selection-region {
+        width: 50px;
+        height: 50px;
+    }
+
+    .user-choice {
+        width: 30px;
+        height: 30px;
+    }
+
+    #user-move-selection {
+        gap: 20px;
+    }
+
+    #winner-lottie {
+        width: 80%;
+    }
+
+}
